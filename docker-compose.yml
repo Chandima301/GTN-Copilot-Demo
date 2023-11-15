@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  server:
+    build:
+      context: .
+    image: gtn_copliot:latest
+    container_name: gtn_copliot
+    ports:
+      - "8001:8001"
+    env_file:
+      - .env
